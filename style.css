@@ -1,14 +1,14 @@
 :root {
-    /* Color Palette derived from images (Brown, Gold, Cream) */
-    --clr-primary: #754b35; /* Deep elegant brown */
-    --clr-primary-light: #9a6549;
-    --clr-secondary: #d4af37; /* Gold */
-    --clr-secondary-light: #eadd9a;
-    --clr-accent: #c49646; 
-    --clr-bg: #fcfaf8; /* Off-white/cream */
-    --clr-bg-alt: #f0ebe1;
-    --clr-text-main: #332925;
-    --clr-text-light: #665851;
+    /* Color Palette derived from Logo (#D56535) */
+    --clr-primary: #d56535;
+    --clr-primary-light: #e68055;
+    --clr-secondary: #c25222;
+    --clr-secondary-light: #f5d9cd;
+    --clr-accent: #a84419;
+    --clr-bg: #fffaf8;
+    --clr-bg-alt: #fdf3ef;
+    --clr-text-main: #4a2312;
+    --clr-text-light: #7a4630;
     --clr-white: #ffffff;
     --clr-whatsapp: #25D366;
     --clr-whatsapp-hover: #128C7E;
@@ -75,14 +75,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
-    background-color: rgba(252, 250, 248, 0.95);
-    backdrop-filter: blur(10px);
+    padding: 1rem 5%;
+    background-color: var(--clr-white);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     transition: var(--transition);
 }
 
@@ -474,8 +473,8 @@ body {
 
 /* Footer */
 footer {
-    background-color: var(--clr-text-main);
-    color: var(--clr-white);
+    background-color: var(--clr-white);
+    color: var(--clr-text-main);
     padding: 4rem 5% 2rem;
 }
 
@@ -487,7 +486,7 @@ footer {
     gap: 2rem;
     margin-bottom: 3rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .footer-logo {
@@ -706,11 +705,12 @@ footer {
     height: 70px;
     width: auto;
     object-fit: contain;
+    mix-blend-mode: multiply;
 }
 
 .site-logo-footer {
     height: 60px;
     width: auto;
     object-fit: contain;
-    
+    mix-blend-mode: multiply;
 }
