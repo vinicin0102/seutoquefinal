@@ -714,3 +714,18 @@ footer {
     object-fit: contain;
     mix-blend-mode: multiply;
 }
+
+/* Footer Location Link */
+.footer-location-link {
+    display: inline-block;
+    color: var(--clr-primary);
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    transition: var(--transition);
+}
+
+.footer-location-link:hover {
+    color: var(--clr-primary-light);
+    text-decoration: underline;
+}
