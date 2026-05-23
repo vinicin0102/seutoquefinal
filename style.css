@@ -700,3 +700,17 @@ footer {
         margin: 0 auto;
     }
 }
+
+/* Logo Styling */
+.site-logo {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+
+.site-logo-footer {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Optional: makes logo white for dark footer if needed. Assume we might need to adjust this depending on the logo, but let's try just normal first, removing filter */
+}
