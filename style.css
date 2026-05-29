@@ -729,3 +729,5 @@ footer {
     color: var(--clr-primary-light);
     text-decoration: underline;
 }
+
+.space-section { background-color: var(--clr-bg-alt); }
